@@ -1,8 +1,22 @@
-#navbar {
-    background-color: var(background-color);
-    color: var;
-    font-size: 50px;
+header {
+    color: rgb(205, 200, 200);
+    background-color: #3f51b5;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding: 40px;
 }
-.navbar-brand {
-    font-size: 50px;
-}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+    padding: 10px;
+    }
+.card{
+        padding: 15px;
+        margin: 20px;
+    }
+.card-header{
+color: rgb(5, 5, 60);
+background-color: antiquewhite;
+    }
