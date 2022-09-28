@@ -7,33 +7,34 @@ const Manager = require('./lib/Manager');
 const Intern = require('./lib/Intern');
 const generateWebPage = require('./generateWebPage');
 
+
 // Manager's input
 const managerInfo = () => {
     return inquirer.prompt([
         {
             type: "input",
             message: "Enter your name",
-            name: "Name",
+            name: "name",
         },
         {
             type: "input",
             message: "Enter your ID",
-            name: "ID",
+            name: "id",
         },
         {
             type: "input",
             message: "Enter your email address",
-            name: "Email",
+            name: "email",
         },
         {
             type: "input",
             message: "Enter your office number",
-            name: "Office",
+            name: "office",
         },
 
     ])
         .then((answers) => {
-            const manager = new Manager[answers.Name, answers.ID, answers.Email, answers.Office];
+            const manager = new Manager(answers.name, answers.id, answers.email, answers.office);
             people.push(manager);
             chooseEmployee();
         })
@@ -54,7 +55,7 @@ const chooseEmployee = () => {
         }
     ])
         .then(pickedOption => {
-            switch (pickedOption.key) {
+            switch (pickedOption.Adding) {
                 case "Add Engineer":
                     engineerInfo();
                     break;
@@ -63,6 +64,7 @@ const chooseEmployee = () => {
                     break;
                 default:
                     buildTeam();
+                    break;
             }
         });
 };
@@ -92,7 +94,7 @@ const engineerInfo = () => {
         },
     ])
         .then((answers) => {
-            const engineer = new Engineer[answers.Name, answers.ID, answers.Email, answers.Github];
+            const engineer = new Engineer(answers.Name, answers.ID, answers.Email, answers.Github);
             people.push(engineer);
             chooseEmployee();
         })
@@ -123,7 +125,7 @@ const internInfo = () => {
         },
     ])
         .then((answers) => {
-            const intern = new Intern[answers.Name, answers.ID, answers.Email, answers.School];
+            const intern = new Intern(answers.Name, answers.ID, answers.Email, answers.School);
             people.push(intern);
             chooseEmployee();
         })
@@ -131,7 +133,7 @@ const internInfo = () => {
 
 // Building webpage
 const buildTeam = ()=>{
-    fs.writeFileSync(outputPath, generateWebPage(people), "utf-8")
+    fs.writeFileSync("generatedHTML.html", generateWebPage(people), "utf-8")
 }
 
 managerInfo()
