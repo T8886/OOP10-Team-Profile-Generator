@@ -29,7 +29,7 @@ https:
 * Open terminal
 * Type 'node index.js'
 * Answer the prompts that follow
-* On success a EADME.mdR will be generated.
+* On success a html file will be generated.
 
 ## License:
 N/A
