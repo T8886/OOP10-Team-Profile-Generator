@@ -19,12 +19,12 @@ const buildTeam = (team) => {
 const managerInfo = manager => {
     let html = `
         <div class="card" style="width: 18rem;">
-            <div class="card-header"><b>${manager.name}<b /></div>
+            <div class="card-header"><b>Manager: ${manager.name}</b></div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">${manager.name} </li>
-                <li class="list-group-item">${manager.id} </li>
-                <li class="list-group-item">${manager.email} </li>
-                <li class="list-group-item">${manager.office} </li>
+                <li class="list-group-item">Name: ${manager.name} </li>
+                <li class="list-group-item">ID: ${manager.id} </li>
+                <li class="list-group-item">Email: ${manager.email} </li>
+                <li class="list-group-item">Office: ${manager.office} </li>
             </ul>
         </div>`;
 
@@ -33,12 +33,12 @@ const managerInfo = manager => {
 const engineerInfo = engineer => {
     let html = `
         <div class="card" style="width: 18rem;">
-            <div class="card-header"><b>${engineer.name}<b /></div>
+            <div class="card-header"><b>Engineer: ${engineer.name}</b></div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">${engineer.name} </li>
-                <li class="list-group-item">${engineer.id} </li>
-                <li class="list-group-item">${engineer.email} </li>
-                <li class="list-group-item">${engineer.github} </li>
+                <li class="list-group-item">Name: ${engineer.name} </li>
+                <li class="list-group-item">ID: ${engineer.id} </li>
+                <li class="list-group-item">Email: ${engineer.email} </li>
+                <li class="list-group-item">Github: ${engineer.github} </li>
             </ul>
         </div>`;
 
@@ -48,19 +48,19 @@ const engineerInfo = engineer => {
 const internInfo = intern => {
     let html = `
         <div class="card" style="width: 18rem;">
-            <div class="card-header"><b>${intern.name}<b /></div>
+            <div class="card-header"><b>Intern: ${intern.name}</b></div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">${intern.name} </li>
-                <li class="list-group-item">${intern.id} </li>
-                <li class="list-group-item">${intern.email} </li>
-                <li class="list-group-item">${intern.school} </li>
+                <li class="list-group-item">Name: ${intern.name} </li>
+                <li class="list-group-item">ID: ${intern.id} </li>
+                <li class="list-group-item">Email: ${intern.email} </li>
+                <li class="list-group-item">School:${intern.school} </li>
             </ul>
         </div>`;
     return html;
 }
 const generateWebPage = team => {
     return `
-    < !DOCTYPE html >
+    <!DOCTYPE html >
     <html lang="en">
     
         <head>
