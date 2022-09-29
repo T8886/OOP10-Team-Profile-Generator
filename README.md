@@ -1,11 +1,11 @@
 # OOP10-Team-Profile-Generator
 
 ## Table of Contents
-* [Description]()
-* [Visual Presentation]()
-* [Installation]()
-* [Usage]()
-* [License]()
+* [Description](https://github.com/T8886/OOP10-Team-Profile-Generator#description)
+* [Visual Presentation](https://github.com/T8886/OOP10-Team-Profile-Generator#visual-presentation)
+* [Installation](https://github.com/T8886/OOP10-Team-Profile-Generator#installation)
+* [Usage](https://github.com/T8886/OOP10-Team-Profile-Generator#usage)
+* [License](https://github.com/T8886/OOP10-Team-Profile-Generator#license)
 
 ## Description:
 Node.js command-line application was created so it could take in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. 
@@ -19,7 +19,7 @@ Node.js command-line application was created so it could take in information abo
 * WHEN person decides to finish building team THEN individual exit the application, and the HTML is generated.
 
 ##  Visual Presentation
-https:
+https://drive.google.com/file/d/1O1eTNrteGU9WvVYPT6uedqHv1QtWcRUw/view?usp=sharing
 
 ## Installation:
 * Download it through Github
